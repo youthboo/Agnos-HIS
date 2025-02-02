@@ -23,7 +23,7 @@ func ptr(s string) *string {
 	return &s
 }
 
-// ตั้งค่าข้อมูลก่อนการทดสอบ (สร้างทั้ง Staff และ Patient)
+// ตั้งค่าข้อมูลก่อนการทดสอบ 
 func setupTestDB() {
 	config.ConnectDB()
 	config.DB.Exec("DELETE FROM staffs")

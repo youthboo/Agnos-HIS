@@ -14,8 +14,20 @@
 - `docker-compose up --build`
 - 📌 *Note: Ensure that Docker is installed and running.*
 
+## Available Ports
+หลังจากรัน `docker-compose up --build` ระบบจะเปิดใช้งานบนพอร์ตดังนี้:
+
+| Service       | Port           | Description |
+|--------------|--------------|-------------|
+| **Database (PostgreSQL)** | `5432` | ใช้เก็บข้อมูลของระบบ |
+| **Backend API (Go)** | `8080` | ให้บริการ API สำหรับ Staff & Patient |
+| **Nginx Reverse Proxy** | `8081` | ใช้เป็น Reverse Proxy สำหรับ API |
+
+---
+
 ## Running Unit Tests
 - `go test -v ./tests/`
+
 
 ## Contributors
 **Palita Lertsaksrisakul**
